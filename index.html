@@ -1,174 +1,175 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>花粉でつらいあなたへ | My Relief</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花粉でつらいあなたへ | My Relief</title>
 
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
-      margin: 0;
-      line-height: 1.7;
-      color: #333;
-      background: #fff;
-    }
+<style>
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
+  color:#333;
+  line-height:1.7;
+  background:#F6FBF7;
+}
+.section{
+  padding:60px 20px;
+  max-width:760px;
+  margin:0 auto;
+}
+.white{ background:#fff; }
+.soft{ background:#F6FBF7; }
 
-    .section {
-      padding: 48px 20px;
-      max-width: 720px;
-      margin: 0 auto;
-    }
+h1{ font-size:28px; line-height:1.4; margin-bottom:16px;}
+h2{ font-size:22px; margin-bottom:16px;}
+p{ margin-bottom:16px;}
 
-    h1 {
-      font-size: 26px;
-      line-height: 1.4;
-      margin-bottom: 16px;
-    }
+.hero{
+  position:relative;
+  color:#fff;
+  text-align:center;
+  padding:100px 20px;
+  background:url('https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1600') center/cover no-repeat;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:720px;
+  margin:0 auto;
+}
+.cta{
+  display:inline-block;
+  margin-top:20px;
+  background:#43A047;
+  color:#fff;
+  padding:14px 22px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+ul{ padding-left:20px; }
 
-    h2 {
-      font-size: 20px;
-      margin-bottom: 16px;
-    }
+.image-block{
+  margin:20px 0;
+  text-align:center;
+}
+.image-block img{
+  max-width:100%;
+  border-radius:12px;
+}
 
-    p {
-      margin-bottom: 16px;
-    }
+.faq{
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+}
 
-    ul {
-      padding-left: 20px;
-      margin-bottom: 16px;
-    }
-
-    .cta {
-      display: inline-block;
-      background: #4CAF50;
-      color: #fff;
-      padding: 14px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 16px;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    .faq {
-      background: #f9f9f9;
-      padding: 24px;
-      border-radius: 8px;
-    }
-
-    .sticky-cta {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background: #ffffff;
-      padding: 12px;
-      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .sticky-cta a {
-      background: #4CAF50;
-      color: #fff;
-      padding: 12px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-    }
-
-    .spacer {
-      height: 80px;
-    }
-  </style>
+.sticky{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#ffffff;
+  box-shadow:0 -2px 8px rgba(0,0,0,0.1);
+  padding:12px;
+  text-align:center;
+}
+.sticky a{
+  background:#43A047;
+  color:#fff;
+  padding:12px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.spacer{ height:80px;}
+</style>
 </head>
 
 <body>
 
-  <!-- FV -->
-  <div class="section center">
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
     <h1>花粉でつらいあなたへ。<br>スマホに4分触れるだけ。</h1>
     <p>副作用なし・完全無料で体験できます。</p>
     <a href="https://line.me/xxxx" target="_blank" class="cta">無料でLINE体験する</a>
   </div>
+</div>
 
-  <!-- 共感 -->
-  <div class="section">
-    <h2>こんな悩みありませんか？</h2>
-    <ul>
-      <li>毎年この時期が憂うつ</li>
-      <li>薬で眠くなるのがつらい</li>
-      <li>仕事や家事に集中できない</li>
-    </ul>
-    <p>そのつらさ、我慢しなくていいかもしれません。</p>
+<!-- 共感 -->
+<div class="section white">
+  <h2>こんな悩みありませんか？</h2>
+  <div class="image-block">
+    <img src="https://images.unsplash.com/photo-1588776814546-ec7e6f95b273?q=80&w=1200" alt="花粉に悩む女性">
   </div>
+  <ul>
+    <li>毎年この時期が憂うつ</li>
+    <li>薬で眠くなるのがつらい</li>
+    <li>仕事や家事に集中できない</li>
+  </ul>
+  <p>そのつらさ、我慢しなくていいかもしれません。</p>
+</div>
 
-  <!-- 体験の簡単さ -->
-  <div class="section center">
-    <h2>体験はとてもシンプルです</h2>
-    <p>アプリ不要。<br>スマホ画面に4分間触れるだけ。</p>
-    <p>いつでも、どこでもお試しいただけます。</p>
-    <a href="https://line.me/xxxx" target="_blank" class="cta">無料でLINE体験する</a>
+<!-- 体験の簡単さ -->
+<div class="section soft">
+  <h2>体験はとてもシンプルです</h2>
+  <div class="image-block">
+    <img src="https://images.unsplash.com/photo-1510557880182-3f8a54a0b7e8?q=80&w=1200" alt="スマホを触る様子">
   </div>
+  <p>アプリ不要。スマホ画面に4分間触れるだけ。</p>
+  <p>いつでも、どこでもお試しいただけます。</p>
+  <a href="https://line.me/xxxx" target="_blank" class="cta">無料でLINE体験する</a>
+</div>
 
-  <!-- 信頼ゾーン -->
-  <div class="section">
-    <h2>なぜこの取り組みが生まれたのか</h2>
-    <p>
-      トレンドマイクロ創業者であるスティーブ・チャン氏自身も、
-      重度の花粉症に悩まされていました。
-    </p>
-    <p>
-      「技術で社会課題を解決したい」という想いから、
-      利益を目的としないNPOとしてMy Reliefは開発されました。
-    </p>
-  </div>
+<!-- 信頼 -->
+<div class="section white">
+  <h2>なぜこの取り組みが生まれたのか</h2>
+  <p>
+    トレンドマイクロ創業者 スティーブ・チャン氏自身も
+    重度の花粉症に悩まされていました。
+  </p>
+  <p>
+    「技術で社会課題を解決したい」という想いから、
+    利益を目的としないNPOとしてMy Reliefは開発されました。
+  </p>
+</div>
 
-  <!-- 仕組み -->
-  <div class="section">
-    <h2>仕組みについて</h2>
-    <p>
-      東洋医学の「気」の流れに着目し、
-      環境や条件に合わせて最適化を続けています。
-    </p>
-    <p>
-      医療行為ではなく、セルフケアサポートとしてご利用いただけます。
-    </p>
-  </div>
+<!-- 無料理由 -->
+<div class="section soft">
+  <h2>なぜ無料なの？</h2>
+  <p>
+    日本への還元を目的としているため、
+    登録費用や利用料金は一切かかりません。
+  </p>
+  <p>販売や勧誘もありません。</p>
+</div>
 
-  <!-- 無料理由 -->
-  <div class="section">
-    <h2>なぜ無料なの？</h2>
-    <p>
-      日本への還元を目的としているため、
-      登録費用や利用料金は一切かかりません。
-    </p>
-    <p>販売や勧誘もありません。</p>
-  </div>
+<!-- FAQ -->
+<div class="section white faq">
+  <h2>よくある質問</h2>
+  <p><strong>Q. 本当に無料ですか？</strong><br>
+  A. はい。登録費用も利用料金もかかりません。</p>
 
-  <!-- FAQ -->
-  <div class="section faq">
-    <h2>よくある質問</h2>
-    <p><strong>Q. 本当に無料ですか？</strong><br>
-    A. はい。登録費用も利用料金もかかりません。</p>
+  <p><strong>Q. 医療行為ですか？</strong><br>
+  A. 医療行為ではありません。セルフケアサポートです。</p>
 
-    <p><strong>Q. 医療行為ですか？</strong><br>
-    A. 医療行為ではありません。セルフケアサポートです。</p>
+  <p><strong>Q. 解約は必要ですか？</strong><br>
+  A. 定期契約はありませんので解約手続きも不要です。</p>
+</div>
 
-    <p><strong>Q. 解約は必要ですか？</strong><br>
-    A. 定期契約はありませんので解約手続きも不要です。</p>
-  </div>
+<div class="spacer"></div>
 
-  <div class="spacer"></div>
-
-  <!-- 固定CTA -->
-  <div class="sticky-cta">
-    <a href="https://line.me/xxxx" target="_blank">無料でLINE体験する</a>
-  </div>
+<!-- 固定CTA -->
+<div class="sticky">
+  <a href="https://line.me/xxxx" target="_blank">無料でLINE体験する</a>
+</div>
 
 </body>
 </html>
